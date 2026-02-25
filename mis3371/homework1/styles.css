@@ -7,12 +7,18 @@ Version: 1.0
 Description: External CSS file for patient-file.html to refer to for various styles used 
 -->
 
-body {
+#Far-Stretch-of-Azure {
 	background-color: Azure;
-	font-family: Roboto;
+}
+.font-A {
+	font-style: Roboto;
+}
+.color {
+	color: IndianRed
 }
 h1 {
-	background-color: DeepSkyBlue;
+	background-color: LightGoldenRodYellow;
+	color: Crimson;
 	font-family: Georgia;
 	text-align: center;
 }

@@ -1,0 +1,18 @@
+<!-- 
+Program Name: styles.css
+Author: Logan Caudillo
+Date created: 2/24/2026
+Date last edited:
+Version: 1.0
+Description: External CSS file for patient-file.html to refer to for various styles used 
+-->
+
+body {
+	background-color: Azure;
+	font-family: Roboto;
+}
+h1 {
+	background-color: DeepSkyBlue;
+	font-family: Georgia;
+	text-align: center;
+}

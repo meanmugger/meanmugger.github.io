@@ -10,22 +10,24 @@ Description: A patient registration form for a company called Rhine Medicine ask
 <html>
 <head>
 	<link rel="stylesheet" href="styles.css">
-  <title>Patient Registration</title>
+	<title>Patient Registration</title>
 </head>
 <body>
   
-  <h1>
-    Rhine Medicine
-  </h1>
-<p> Please click yes on the screen to continue</p>
-  <p id="date"></p>
+	<h1>
+		<img src="MedLogo.png" alt="Caduceus Insignia" style="float:left;width:200px;height:200px;>
+    	Rhine Medicine
+	</h1>
+	<p id="date"></p>
+	<script>
+		const d = new date();
+		document.getElementById("date").innerHTML = d;
+	</script>
+	
 	<form>
 		
 	</form>
   
 </body>
 </html>
-<script>
-  const d = new date();
-  document.getElementById("date").innerHTML = d;
-</script>
+

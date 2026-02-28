@@ -1,0 +1,72 @@
+body {
+    background-color: Azure;
+    font-family: "Georgia";
+}
+#header img {
+    width: 220px;
+    height: 250px;
+    float: left;
+}
+
+#header {
+    background-color: Beige;
+    color: CadetBlue;
+    text-align: center;
+    padding: 30px;
+}
+table.form, tr.form, td.form {
+    width: 100%;
+    font-family: "Times New Roman", sans-serif;
+    background-color: deepskyblue;
+    color: gray;
+}
+table.form2, tr.form2, td.form2 {
+    width: 100%;
+    font-family: "Times New Roman", sans-serif;
+    background-color: azure;
+    color: gray;
+}
+th.form {
+    font-family: "Times New Roman", sans-serif;
+    background-color: deepskyblue;
+    color: red;
+    padding: 30px;
+    border-spacing: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slidecontainer {
+    width: 100%;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: black;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: black;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: 5px;
+    height: 25px;
+    background: black;
+    cursor: pointer;
+}
+#footer {
+    font-family: "Georgia", sans-serif;
+    color: rgb(225, 200, 227);
+    background-color: rgb(225, 200, 227);
+}

@@ -6,7 +6,6 @@ function reviewData() {
   formoutput = "<table class='output'><th>Dataname</th><th>Type</th><th>Value</th>";
   for (i = 0; i < formcontents.length; i++) {
             console.log("item: "+i+" "+formcontents.elements[i].name+" = "+formcontents.elements[i].value);
-            //if (formcontents.elements[i].value !="") {
               datatype = formcontents.elements[i].type;
               switch (datatype) {
                 case "checkbox":

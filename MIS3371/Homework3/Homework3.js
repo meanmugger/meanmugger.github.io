@@ -250,7 +250,7 @@ function checkPassword() {
             break;
         case 4:
             if(x == y) {
-                document.getElementById("password_message4").innerHTML = "Password cannot be the same as ID"
+                document.getElementById("password_message5").innerHTML = "Password cannot be the same as ID"
                 error_flag = 1;
             }
             break;

@@ -40,7 +40,7 @@ th.form {
 }
 .slider {
     -webkit-appearance: none;
-    width: 100%;
+    width: 40%;
     height: 5px;
     background: black;
     outline: none;
@@ -71,15 +71,3 @@ th.form {
     background-color: rgb(225, 200, 227);
 }
 
-#firstname {
-    size: 30;
-
-}
-
-#middleinit {
-    size: 1;
-}
-
-#lastname {
-    size: 50;
-}

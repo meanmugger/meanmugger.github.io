@@ -42,7 +42,7 @@ function retrieveData() {
 
 function checkFirstName() {
     let x = document.getElementById("firstname").value;
-    if(x.length < 0) {
+    if(x.length < 1) {
         document.getElementById("name_message").innerHTML = "Please enter your name"
         error_flag = 1;
     }
@@ -269,5 +269,31 @@ function passwordMatch() {
     }
     else {
         document.getElementById("confirm_text").innerHTML = "";
+    }
+}
+
+function checkForm() {
+    error_flag = 0;
+    checkFirstName();
+    checkMiddleInitial();
+    checkLastName();
+    checkDateOfBirth();
+    checkSocialSecurity();
+    checkEmail();
+    checkPhone();
+    checkAddr1();
+    checkAddr2();
+    checkCity();
+    checkState();
+    checkZip();
+    checkUserId();
+    checkPassword();
+    passwordMatch();
+    console.log("Error flag: " + error_flag);
+    if(error_flag == "1") {
+        alert("Please fix the errors on your form");
+    }
+    else {
+        document.getElementById("submit").disabled = false;
     }
 }

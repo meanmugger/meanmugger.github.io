@@ -15,13 +15,13 @@ body {
     padding: 30px;
 }
 table.form, tr.form, td.form {
-    width: 100%;
+    width: 60%;
     font-family: "Times New Roman", sans-serif;
     background-color: deepskyblue;
     color: gray;
 }
 table.form2, tr.form2, td.form2 {
-    width: 100%;
+    width: 60%;
     font-family: "Times New Roman", sans-serif;
     background-color: azure;
     color: gray;
@@ -36,7 +36,7 @@ th.form {
     margin-right: auto;
 }
 .slidecontainer {
-    width: 100%;
+    width: 40%;
 }
 .slider {
     -webkit-appearance: none;

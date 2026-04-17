@@ -66,11 +66,9 @@ Description: An HTML program that validates form data on the fly majority throug
                             minlength="1"
                             maxlength="30" 
                             id="lastname" 
-                            name="lastname" 
-                           
+                            name="lastname"                            
                             required
-                            oninvalid="this.setCustomValidity('Please type in the correct format')"
-                            oninput="this.setCustomValidity('')" 
+                            onblur="checkLastName()"
                             placeholder="Last Name"   
                             title="Only letters, apostrophes, and dashes allowed"                       
                         ></td>
@@ -82,7 +80,7 @@ Description: An HTML program that validates form data on the fly majority throug
                     <td><input type="date"
                         id="birthday"
                         name="birthday"
-                        min="01/01/1906"
+                        min="1906-01-01"
                         max="birthdayRestrictions()"
                         oninvalid="this.setCustomValidity('Impossible Date')"
                         oninput="this.setCustomValidity('')"

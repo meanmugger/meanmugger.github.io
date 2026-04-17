@@ -3,7 +3,7 @@ function errorFlags() {
     console.log(error_flag);
 }
 function retrieveData() {
-    let formcontents = document.getElementById("");
+    let formcontents = document.getElementById("getdata");
     let formoutput;
     let datatype;
     let i;

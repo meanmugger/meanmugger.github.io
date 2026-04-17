@@ -126,7 +126,7 @@ Description: An HTML program that validates form data on the fly majority throug
                     <td><label for="addr1">Address 1: </label></td>
                     <td><input type="text"
                         maxlength="30"
-                        size="50"
+                        size="30"
                         id="addr1"
                         name="addr1"
                         placeholder="123 Main St"
@@ -139,7 +139,7 @@ Description: An HTML program that validates form data on the fly majority throug
                     <td><label for="addr2">Address 2: </label></td>
                     <td><input type="text"
                         maxlength="30"
-                        size="50"
+                        size="30"
                         id="addr2"
                         name="addr2"
                         placeholder="Apt #"
@@ -229,7 +229,7 @@ Description: An HTML program that validates form data on the fly majority throug
                 </tr>
             </table>
 
-            <table width="100%">
+            <table id="table2">
                 <tr>
                     <td><p>Do you have any allergies?</p>
                     <label for="allergy1">Pollen</label>
@@ -352,7 +352,7 @@ Description: An HTML program that validates form data on the fly majority throug
                     required
                     onblur="checkUserId()"
                     title="No special characters, no spaces, and at least 5 characters"
-                ><br>
+                ><span id="user_message"></span><br>
                 <!--pattern="\w[A-Za-z0-9_-]{5,30}"-->
                 <label for="password">Password: </label><br>
                 <input type="password"
@@ -379,20 +379,20 @@ Description: An HTML program that validates form data on the fly majority throug
                     onblur="passwordMatch()"
                     title="Please match the first password"
                 >
-                <table>
-                    <tr>
+                <table id="table3">
+                    <tr class="form2">
                         <td> </td><td id="password_message1"></td><td> </td>
                     </tr>
-                    <tr>
+                    <tr class="form2">
                         <td> </td><td id="password_message2"></td><td> </td>
                     </tr>
-                    <tr>
+                    <tr class="form2">
                         <td> </td><td id="password_message3"></td><td> </td>
                     </tr>
-                    <tr>
+                    <tr class="form2">
                         <td> </td><td id="password_message4"></td><td> </td>
                     </tr>
-                    <tr>
+                    <tr class="form2">
                         <td> </td><td id="password_message5"></td><td> </td>
                     </tr>
                 </table>

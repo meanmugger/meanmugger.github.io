@@ -35,6 +35,15 @@ th.form {
     margin-left: auto;
     margin-right: auto;
 }
+
+#table2 {
+    width: 60%;
+}
+
+#table3 {
+    width: 60%;
+}
+
 .slidecontainer {
     width: 40%;
 }

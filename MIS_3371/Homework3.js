@@ -9,7 +9,7 @@ function retrieveData() {
     let i;
     formoutput = "<table class='output'><th>Dataname</th><th>Value</th>";
     for (i= 0; i < formcontents.length; i++) {
-        console.log("item: " + i + " " +formcontents.elements[i].name " = " + formcontents.elements[i].value);
+        console.log("item: " + i + " " +formcontents.elements[i].name + " = " + formcontents.elements[i].value);
         datatype = formcontents.elements[i].type;
         switch (datatype) {
             case "checkbox":

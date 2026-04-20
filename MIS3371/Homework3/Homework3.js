@@ -222,6 +222,8 @@ function checkUserId() {
 function checkPassword() {
     let x = document.getElementById("password").value;
     let y = document.getElementById("user").value;
+    let passwordoutput;
+    console.log(x);
 
     switch(x) {
         case 0:

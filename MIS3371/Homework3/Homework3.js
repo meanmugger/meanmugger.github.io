@@ -240,7 +240,7 @@ function checkPassword() {
 
     if(errors.length > 0) {
         errors.forEach(error => {
-            let tr = document.createElement("li");
+            let li = document.createElement("li");
             li.textContent = error;
             errorList.appendChild(li);
         })

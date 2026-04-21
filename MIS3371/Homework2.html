@@ -46,7 +46,7 @@ Description: An html program that reviews and redisplays all the data entered in
                             maxlength="30" 
                             id="firstname" 
                             name="firsttname" 
-                            pattern="[a-zA-Z'-]{2,}"
+                            pattern="[a-zA-Z'\-]{2,}"
                             required
                             oninvalid="this.setCustomValidity('Please enter in the correct format')"
                             oninput="this.setCustomValidity('')"
@@ -70,7 +70,7 @@ Description: An html program that reviews and redisplays all the data entered in
                             maxlength="30" 
                             id="lastname" 
                             name="lastname" 
-                            pattern="[A-Za-z2-5'-]{2,}"
+                            pattern="[A-Za-z2-5'\-]{2,}"
                             required
                             oninvalid="this.setCustomValidity('Please type in the correct format')"
                             oninput="this.setCustomValidity('')" 
@@ -118,7 +118,7 @@ Description: An html program that reviews and redisplays all the data entered in
                         name="Phone"
 						minlength="5"
 						maxlength="10"
-                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                        pattern="[0-9]{10}"
                         placeholder="000-000-0000"
                         oninvalid="this.setCustomValidity('digits only')"
 						oninput="this.setCustomValidity('')"

@@ -117,6 +117,18 @@ function addDashesToSocial() {
     })
 }
 
+function checkEmail() {
+    let email = document.getElementById("email").value;
+
+    if(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]/.test(email)) {
+        document.getElementById("email_message").innerHTML = "";
+    } 
+    else {
+        document.getElementById("email_message").innerHTML = "Email must be in 'name@domain.ltd' format";
+        error_flag = 1;
+    }
+}
+
 function checkAddr1() {
     let x = document.getElementById("addr1").value;
     console.log(x.value);

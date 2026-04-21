@@ -85,7 +85,7 @@ function checkLastName() {
 // check SSN and Birthday 
 function checkSocialSecurity() {
     let x = document.getElementById("ssn").value;
-    if(x < 9) {
+    if(x.length < 9) {
         document.getElementById("ssn_message").innerHTML = "SSN must be 9 digits";
         error_flag = 1
     }

@@ -58,7 +58,7 @@ function checkFirstName() {
 function checkMiddleInitial() {
     let x = document.getElementById("middleinit").value;
     if(x.length > 0) {
-        if (x.match(/[a-zA-Z ]/)) {
+        if (/[a-zA-Z ]/.test(x)) {
             document.getElementById("name_message").innerHTML = "";
         }
         else {
@@ -70,7 +70,7 @@ function checkMiddleInitial() {
 
 function checkLastName() {
     let x = document.getElementById("lastname").value;
-    if(x < 0) {
+    if(x < 1) {
         document.getElementById("name_message").innerHTML = "Please enter Last Name";
         error_flag = 1;
     }

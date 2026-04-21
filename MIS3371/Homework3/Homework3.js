@@ -214,44 +214,39 @@ function checkUserId() {
 
 
 function checkPassword() {
+    function checkPassword() {
     let x = document.getElementById("password").value;
     let y = document.getElementById("user").value;
-    let passwordoutput;
-    console.log(x);
+    let errorList = document.getElementById("error_list");
+    let errors = [];
 
-    switch(x) {
-        case 0:
-            if(x.length < 8) {
-                document.getElementById("password_message1").innerHTML = "Password too short";
-                error_flag = 1;
-            }
-            break;
-        case 1:
-            if(x.match(/[^A-Z]+$/)) {
-                document.getElementById("password_message2").innerHTML = "Must have at least 1 upper case letter";
-                error_flag = 1;
-            }
-            break;
-        case 2:
-            if(x.match(/[^a-z]+$/)) {
-                document.getElementById("password_message3").innerHTML = "Must have at least 1 lower case letter";
-                error_flag = 1;
-            }
-            break;
-        case 3:
-            if(x.match(/[^0-9]+/)) {
-                document.getElementById("password message4").innerHTML = "Must have at least 1 number";
-                error_flag = 1;
-            }
-            break;
-        case 4:
-            if(x == y) {
-                document.getElementById("password_message5").innerHTML = "Password cannot be the same as ID"
-                error_flag = 1;
-            }
-            break;
-        default :
-            document.getElementById("password_message").innerHTML = "";
+    errorList = "";
+
+    switch(true) {
+        case (x.length < 8):
+            errors.push("Password is less than 8 characters.");
+
+        case (!/A-Z/.test(x)):
+            errors.push("Must have at least 1 upper case letter");
+
+        case (!/[a-z]/.test(x)):
+            errors.push("Must have at least one lower case letter.");
+
+        case (!/[0-9]/.test(x)):
+            errors.push("Must have a least one number.");
+
+        case (x == y):
+            errors.push("Password cannot be the same as Username.");
+    }
+
+    if(errors.length > 0) {
+        errors.forEach(error => {
+            let tr = document.createElement("li");
+            li.textContent = error;
+            errorList.appendChild(li);
+        })
+    } else {
+        document.getElementById("error_list").innerHTML = "";
     }
 }
 

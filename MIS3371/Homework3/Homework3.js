@@ -47,7 +47,7 @@ function checkFirstName() {
         error_flag = 1;
     }
     else if(x.match(/[a-zA-Z'-]+$/)) {
-        document.getElementById("name_message") = "";
+        document.getElementById("name_message").innerHTML = "";
     }
     else {
         document.getElementById("name_message").innerHTML = "Invalid characters in name";

@@ -237,8 +237,6 @@ function checkPassword() {
         case (x == y):
             errors.push("Password cannot be the same as Username.");
         break;
-        default:
-            errors.push("");
     }
 
     if(errors.length > 0) {

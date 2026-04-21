@@ -48,7 +48,7 @@ Description: An html program that reviews and redisplays all the data entered in
                             name="firsttname" 
                             pattern="[a-zA-Z'\-]{2,}"
                             required
-                            oninvalid="this.setCustomValidity('Please enter in the correct format')"
+                            oninvalid="this.setCustomValidity('Please enter only letters, apostrophes, or dashes')"
                             oninput="this.setCustomValidity('')"
                             placeholder="First Name"
                             title="Letters, apostrophes, and dashes only!"
@@ -72,7 +72,7 @@ Description: An html program that reviews and redisplays all the data entered in
                             name="lastname" 
                             pattern="[A-Za-z2-5'\-]{2,}"
                             required
-                            oninvalid="this.setCustomValidity('Please type in the correct format')"
+                            oninvalid="this.setCustomValidity('Please enter only letters, apostrophes, dashes, or the numbers 2-5')"
                             oninput="this.setCustomValidity('')" 
                             placeholder="Last Name"   
                             title="Letters, apostrophes, numbers 2-5, and dashes allowed"                       

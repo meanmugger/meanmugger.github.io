@@ -140,32 +140,32 @@ function checkPhone() {
 
 function checkAddr1() {
     let x = document.getElementById("addr1").value;
-    console.log(x.value);
-    console.log(x.length);
+    // console.log(x.value);
+    // console.log(x.length);
     if(x.length < 2 || x.length > 30) {
         document.getElementById("addr1_message").innerHTML = "Invalid address";
         error_flag = 1;
-        console.log(error_flag);
+        // console.log(error_flag);
     }
     else {
         document.getElementById("addr1_message").innerHTML = "";
     }
-    console.log(addr1_message);
+    //console.log(addr1_message);
 }
 
 function checkAddr2() {
     let x = document.getElementById("addr2").value;
-    console.log(x.value);
-    console.log(x.length);
+    //console.log(x.value);
+    //console.log(x.length);
     if(x.length == 0) {
         document.getElementById("addr2_message").innerHTML = "";
     }
     else if(x.length < 2 || x.length > 30) {
         document.getElementById("addr2_message").innerHTML = "Invalid address";
         error_flag = 1;
-        console.log(error_flag);
+        //console.log(error_flag);
     }
-    console.log(addr2_message)
+    //console.log(addr2_message)
 }
 
 function checkCity() {

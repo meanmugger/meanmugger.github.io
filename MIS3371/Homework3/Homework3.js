@@ -95,8 +95,10 @@ function checkSocialSecurity() {
 }
 
 function checkDateOfBirth() {
-    let x = document.getElementById("birthday").value;
-    
+    let today = new Date().toLocaleDateString();
+    let futureDate;
+
+    document.getElementById("birthday").setAttribute("max", today);  
 }
 
 function addDashesToSocial() {

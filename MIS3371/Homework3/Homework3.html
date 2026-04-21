@@ -115,8 +115,9 @@ Description: An HTML program that validates form data on the fly majority throug
                         name="phone"                        
                         placeholder="000-000-0000"
                         oninvalid="this.setCustomValidity('digits only')"
+						onblur="checkPhone()"
                         title="Numbers only"
-                    ></td>
+                    ><span id="phone_message"></span></td>
                     <!--pattern="[0-9]{10}" phone#-->
                 </tr>
                 </div>

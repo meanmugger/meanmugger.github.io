@@ -192,7 +192,7 @@ function checkUserId() {
                 document.getElementById("user_message").innerHTML = "First character must not be a number";
                 error_flag = 1;
             break;
-        case (x.match(!/[a-zA-Z0-9-_]/)):
+        case (!/[a-zA-Z0-9-_]/.test(x)):
                 document.getElementById("user_message").innerHTML = "Invalid characters in username";
                 error_flag = 1;
             break;

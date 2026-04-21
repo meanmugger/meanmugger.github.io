@@ -184,23 +184,17 @@ function checkUserId() {
     let x = document.getElementById("user").value;
 
     switch(x) {
-        case 1:
-            if(x.length < 5 || x.length > 20) {
+        case (x.length < 5 || x.length > 20):
                 document.getElementById("user_message").innerHTML = "Invalid # of characters";
                 error_flag = 1;
-            }
             break;
-        case 2:
-            if(x.match(/^\b\w/)) {
+        case (x.match(/^\b\w/)):           
                 document.getElementById("user_message").innerHTML = "First character must not be a number";
                 error_flag = 1;
-            }
             break;
-        case 3:
-            if(x.match(/[a-zA-Z0-9-_]/)) {
+        case (x.match(/[a-zA-Z0-9-_]/)):
                 document.getElementById("user_message").innerHTML = "Invalid characters in username";
                 error_flag = 1;
-            }
             break;
         default:
             document.getElementById("user_message").innerHTML = "";

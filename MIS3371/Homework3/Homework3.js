@@ -35,7 +35,7 @@ function retrieveData() {
         }
     }
     if (formoutput.length>0) {
-        formout = formout + "</table>";
+        formoutput = formoutput + "</table>";
         document.getElementById("outputformdata").innerHTML = formout;
     }
 }

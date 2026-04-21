@@ -126,6 +126,18 @@ function checkEmail() {
     }
 }
 
+function checkPhone() {
+    let phone = document.getElementById("phone").value;
+
+    if(phone.length < 10 && /[^0-9]/.test(phone)) {
+        document.getElementById("phone_message").innerHTML = "Invalid Phone #";
+        error_flag = 1;
+    }
+    else {
+        document.getElementById("phone_message").innerHTML = "";
+    }
+}
+
 function checkAddr1() {
     let x = document.getElementById("addr1").value;
     console.log(x.value);

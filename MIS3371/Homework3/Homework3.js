@@ -250,13 +250,13 @@ function checkPassword() {
         break;
         case (!/[A-Z]*/.test(x)):
             errors.push("Must have at least 1 upper case letter");
-        
+        break;
         case (!/[a-z]*/.test(x)):
             errors.push("Must have at least one lower case letter.");
-        
+        break;
         case (!/[0-9]*/.test(x)):
             errors.push("Must have a least one number.");
-        
+        break;
         case (x == y):
             errors.push("Password cannot be the same as Username.");
         break;

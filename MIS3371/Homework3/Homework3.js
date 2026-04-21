@@ -3,7 +3,7 @@ function errorFlags() {
     console.log(error_flag);
 }
 function retrieveData() {
-    let formcontents = document.getElementById("getdata");
+    let formcontents = document.getElementById("patReg");
     let formoutput;
     let datatype;
     let i;

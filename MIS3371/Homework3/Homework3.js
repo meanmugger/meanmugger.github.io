@@ -247,7 +247,7 @@ function checkPassword() {
     switch(true) {
         case (x.length < 8):
             errors.push("Password is less than 8 characters.");
-        
+        break;
         case (!/[A-Z]*/.test(x)):
             errors.push("Must have at least 1 upper case letter");
         

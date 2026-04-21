@@ -263,9 +263,9 @@ function checkPassword() {
     }
 
     if(errors.length > 0) {
-        errors.forEach(error => {
+        errors.forEach(errors => {
             let li = document.createElement("li");
-            li.innerHTML = error;
+            li.innerHTML = errors;
             document.getElementById("error_list").appendChild(li);
         })
     } else {

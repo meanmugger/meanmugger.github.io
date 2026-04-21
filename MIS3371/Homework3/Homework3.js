@@ -188,7 +188,7 @@ function checkUserId() {
                 document.getElementById("user_message").innerHTML = "Invalid # of characters";
                 error_flag = 1;
             break;
-        case (!/^\b\w/).test(x):           
+        case (!/^\b\w/.test(x)):           
                 document.getElementById("user_message").innerHTML = "First character must not be a number";
                 error_flag = 1;
             break;

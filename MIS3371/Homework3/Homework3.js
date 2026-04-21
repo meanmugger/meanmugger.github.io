@@ -36,7 +36,7 @@ function retrieveData() {
     }
     if (formoutput.length>0) {
         formoutput = formoutput + "</table>";
-        document.getElementById("outputformdata").innerHTML = formout;
+        document.getElementById("outputformdata").innerHTML = formoutput;
     }
 }
 

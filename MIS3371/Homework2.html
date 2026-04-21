@@ -109,6 +109,8 @@ Description: An html program that reviews and redisplays all the data entered in
                     <td><input type="email"
                         id="Email"
                         name="Email"
+						minlength="2"
+						maxlength="20"
                         pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[a-z]{2,20}$"
                         required
                     ></td><br>
@@ -118,7 +120,7 @@ Description: An html program that reviews and redisplays all the data entered in
                         name="Phone"
 						minlength="5"
 						maxlength="10"
-                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                        pattern="[0-9]{10}"
                         placeholder="000-000-0000"
                         oninvalid="this.setCustomValidity('digits only')"
 						oninput="this.setCustomValidity('')"

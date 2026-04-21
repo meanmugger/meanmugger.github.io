@@ -214,7 +214,6 @@ function checkUserId() {
 
 
 function checkPassword() {
-    function checkPassword() {
     let x = document.getElementById("password").value;
     let y = document.getElementById("user").value;
     let errorList = document.getElementById("error_list");
@@ -249,6 +248,7 @@ function checkPassword() {
         document.getElementById("error_list").innerHTML = "";
     }
 }
+
 
 function passwordMatch() {
     let x = document.getElementById("password").value;

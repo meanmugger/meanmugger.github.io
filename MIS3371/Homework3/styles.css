@@ -80,3 +80,19 @@ th.form {
     background-color: rgb(225, 200, 227);
 }
 
+table.output, tr.output, td.output {
+    width: 70%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: palegreen;
+    padding: 5px;
+    border-spacing: 3px;
+    color: yellowgreen;
+}
+td.outputdata {
+    width: 70%;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+    padding: 5px;
+    border-spacing: 3px;
+    color: black;
+}

@@ -181,7 +181,7 @@ function checkCity() {
 
 function checkState() {
     let x = document.getElementById("state").value;
-    if(x.value.length !== 2) {
+    if(x.length !== 2) {
         document.getElementById("state_message").innerHTML = "Please choose a state";
         error_flag = 1;
     }

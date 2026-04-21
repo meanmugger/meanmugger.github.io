@@ -57,7 +57,7 @@ function checkFirstName() {
 
 function checkMiddleInitial() {
     let x = document.getElementById("middleinit").value;
-    if(x.length < 1) {
+    if(x.length == 0) {
             document.getElementById("name_message").innerHTML = "";
     } else if (!/[a-zA-Z ]/.test(x)) { 
         document.getElementById("name_message").innerHTML = "Invalid characters in Middle Initial";

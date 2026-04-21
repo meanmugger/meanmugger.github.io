@@ -81,7 +81,7 @@ th.form {
 }
 
 table.output, tr.output, td.output {
-    width: 70%;
+    width: 60%;
     font-family: 'Times New Roman', Times, serif;
     background-color: palegreen;
     padding: 5px;
@@ -89,7 +89,7 @@ table.output, tr.output, td.output {
     color: yellowgreen;
 }
 td.outputdata {
-    width: 70%;
+    width: 60%;
     font-family: 'Times New Roman', Times, serif;
     background-color: antiquewhite;
     padding: 5px;

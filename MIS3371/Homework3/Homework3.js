@@ -129,7 +129,7 @@ function checkEmail() {
 function checkPhone() {
     let phone = document.getElementById("phone").value;
 
-    if(phone.length < 10 && /[^0-9]/.test(phone)) {
+    if(phone.length < 10 || /[^0-9]/.test(phone)) {
         document.getElementById("phone_message").innerHTML = "Invalid Phone #";
         error_flag = 1;
     }

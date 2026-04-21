@@ -46,7 +46,7 @@ Description: An html program that reviews and redisplays all the data entered in
                             maxlength="30" 
                             id="firstname" 
                             name="firsttname" 
-                            pattern="[A-Za-z'-]{1,30}"
+                            pattern="[A-Za-z'-]{2,}"
                             required
                             oninvalid="this.setCustomValidity('Please enter in the correct format')"
                             oninput="this.setCustomValidity('')"
@@ -58,7 +58,7 @@ Description: An html program that reviews and redisplays all the data entered in
                             maxlength="1" 
                             id="middleinit" 
                             name="middleinit" 
-                            pattern="[A-Za-z]{0,1}"
+                            pattern="[A-Za-z ]{0,1}"
                             placeholder="MI"
                             title="letters only, no numbers. OK to leave blank"                           
                         ></td>  
@@ -68,7 +68,7 @@ Description: An html program that reviews and redisplays all the data entered in
                             maxlength="30" 
                             id="lastname" 
                             name="lastname" 
-                            pattern="[A-Za-z2-5'-]{1,30}"
+                            pattern="[A-Za-z2-5'-]{2,}"
                             required
                             oninvalid="this.setCustomValidity('Please type in the correct format')"
                             oninput="this.setCustomValidity('')" 

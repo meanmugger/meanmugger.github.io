@@ -363,7 +363,7 @@ Description: An html program that reviews and redisplays all the data entered in
                     name="password"
                     minlength="8"
                     maxlength="30"
-                    pattern="[A-Za-z0-9^?=.*]"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                     required
                     oninput="this.setCustomValidity('Missing some requirements')"
 

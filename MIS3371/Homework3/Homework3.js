@@ -183,7 +183,7 @@ function checkZip() {
 function checkUserId() {
     let x = document.getElementById("user").value;
 
-    switch(x) {
+    switch(true) {
         case (x.length < 5 || x.length > 20):
                 document.getElementById("user_message").innerHTML = "Invalid # of characters";
                 error_flag = 1;
@@ -237,6 +237,8 @@ function checkPassword() {
         case (x == y):
             errors.push("Password cannot be the same as Username.");
         break;
+        default:
+            
     }
 
     if(errors.length > 0) {

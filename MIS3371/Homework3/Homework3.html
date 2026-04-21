@@ -107,9 +107,9 @@ Description: An HTML program that validates form data on the fly majority throug
                     <td><input type="email"
                         id="Email"
                         name="Email"
-                        
+                        onblur="checkEmail()"
                         required
-                    ></td><br>
+                    ><span id="email_message"></span></td><br>
                     <!--pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,20}$" email-->
                     <td><label for="phone">Phone Number: </label></td>
                     <td><input type="text"

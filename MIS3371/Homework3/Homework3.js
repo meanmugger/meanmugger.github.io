@@ -157,13 +157,13 @@ function checkAddr2() {
     let x = document.getElementById("addr2").value;
     console.log(x.value);
     console.log(x.length);
-    if(x.length < 2 || x.length > 30) {
+    if(x.length == 0) {
+        document.getElementById("addr2_message").innerHTML = "";
+    }
+    else if(x.length < 2 || x.length > 30) {
         document.getElementById("addr2_message").innerHTML = "Invalid address";
         error_flag = 1;
         console.log(error_flag);
-    }
-    else {
-        document.getElementById("addr2_message").innerHTML = "";
     }
     console.log(addr2_message)
 }

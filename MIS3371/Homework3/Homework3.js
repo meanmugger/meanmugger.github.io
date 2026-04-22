@@ -241,6 +241,7 @@ function checkPassword() {
     let y = document.getElementById("user").value;
     let errorList = document.getElementById("error_list");
     let errors = [];
+    console.log(errorList);
 
     errorList = "";
 
@@ -265,8 +266,8 @@ function checkPassword() {
     if(errors.length > 0) {
         errors.forEach(error => {
             let li = document.createElement("li");
-            li.innerHTML = error;
             console.log(error);
+            li.innerHTML = error;
             document.getElementById("error_list").appendChild(li);
         })
     } else {

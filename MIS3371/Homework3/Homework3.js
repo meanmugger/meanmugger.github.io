@@ -269,7 +269,7 @@ function checkPassword() {
             console.log(error);
             li.innerHTML = error;
             document.getElementById("error_list").appendChild(li);
-        })
+        });
     } else {
         document.getElementById("error_list").innerHTML = "";
     }

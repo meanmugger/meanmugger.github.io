@@ -263,9 +263,10 @@ function checkPassword() {
     }
 
     if(errors.length > 0) {
-        errors.forEach(errors => {
+        errors.forEach(error => {
             let li = document.createElement("li");
-            li.innerHTML = errors;
+            li.innerHTML = error;
+            console.log(error);
             document.getElementById("error_list").appendChild(li);
         })
     } else {

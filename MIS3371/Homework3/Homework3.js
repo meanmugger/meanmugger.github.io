@@ -263,12 +263,12 @@ function checkPassword() {
         break;
     }
 
-    if(errors.length > 0) {
+    if(errors.length > 0) { //try creating a list with all the error messages in HTML,keep the switch but instead of producing a list alongside each check, pull ids and replace the HTML with "" if the pass conditions are met
         errors.forEach(error => {
             let li = document.createElement("li");
             console.log(error);
-            li.innerHTML = error;
-            document.getElementById("error_list").appendChild(li);
+            li.innerHTML = error; //this is what's causing the issues
+            document.getElementById("error_list").appendChild(li); //or is it this? one of these 2 lines 
         });
     } else {
         document.getElementById("error_list").innerHTML = "";
